@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "OKTrUkyOnPPkUhk6rhUwHe+klF/DbUdPPZ0eVYASqop0UrmcV9Y/kbPxn5PZzPEGLxtgw5CP1QyuYwtD8icgsQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\luisc\\Downloads\\New folder (3)\\Azure-Event-Hubs-for-Apache-Kafka-Ecosystems\\EventHubsForKafkaSample\\EventHubsForKafkaSample.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\luisc\\.nuget\\packages\\confluent.kafka\\2.3.0\\confluent.kafka.2.3.0.nupkg.sha512",
+    "C:\\Users\\luisc\\.nuget\\packages\\librdkafka.redist\\2.3.0\\librdkafka.redist.2.3.0.nupkg.sha512",
+    "C:\\Users\\luisc\\.nuget\\packages\\system.configuration.configurationmanager\\8.0.0\\system.configuration.configurationmanager.8.0.0.nupkg.sha512",
+    "C:\\Users\\luisc\\.nuget\\packages\\system.diagnostics.eventlog\\8.0.0\\system.diagnostics.eventlog.8.0.0.nupkg.sha512",
+    "C:\\Users\\luisc\\.nuget\\packages\\system.memory\\4.5.0\\system.memory.4.5.0.nupkg.sha512",
+    "C:\\Users\\luisc\\.nuget\\packages\\system.security.cryptography.protecteddata\\8.0.0\\system.security.cryptography.protecteddata.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
