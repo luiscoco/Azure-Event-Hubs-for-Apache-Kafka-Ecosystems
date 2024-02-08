@@ -18,6 +18,8 @@ Before starting with Azure CLI we run the log in command
 az login
 ```
 
+![image](https://github.com/luiscoco/Azure-Event-Hubs-for-Apache-Kafka-Ecosystems/assets/32194879/76492bd7-b992-4b56-959f-5df408449918)
+
 ### 1.1. Create an Event Hubs Namespace
 
 We use the az eventhubs namespace create command to create a new Event Hubs namespace
