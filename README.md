@@ -30,6 +30,8 @@ az eventhubs namespace create --name mykafkaeventhub --resource-group myRG --loc
 
 This command creates a namespace named "mykafkaeventhub" in the "myRG" resource group, located in "West Europe", with a "Standard" pricing tier
 
+![image](https://github.com/luiscoco/Azure-Event-Hubs-for-Apache-Kafka-Ecosystems/assets/32194879/fcab5614-5c95-4de1-9f03-cce3396078d8)
+
 ### 1.2. Create an Event Hub
 
 After the namespace is created, we can create an Event Hub named "eventhubtest" within this namespace using the az eventhubs eventhub create command
