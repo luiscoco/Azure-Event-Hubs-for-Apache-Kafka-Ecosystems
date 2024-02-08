@@ -107,6 +107,10 @@ We input the project name and location
 
 ![image](https://github.com/luiscoco/Azure-Event-Hubs-for-Apache-Kafka-Ecosystems/assets/32194879/fbd97ca2-5d0a-49e0-bc11-ba8553024205)
 
+We select the .NET8 framework
+
+![image](https://github.com/luiscoco/Azure-Event-Hubs-for-Apache-Kafka-Ecosystems/assets/32194879/353589fa-36c0-4776-8468-aa695f4c51cf)
+
 ## 3. Load the project dependencies/libraries
 
 ![image](https://github.com/luiscoco/Azure-Event-Hubs-for-Apache-Kafka-Ecosystems/assets/32194879/5a797434-6810-40be-85bb-3e0809ef5d65)
