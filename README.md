@@ -95,7 +95,17 @@ Remember, the actual host part of the serviceBusEndpoint URL is the FQDN you're 
 
 ## 2. Create a .NET8 console application
 
+We run Visual Studio 2022 Community Edition and we create a new project
 
+![image](https://github.com/luiscoco/Azure-Event-Hubs-for-Apache-Kafka-Ecosystems/assets/32194879/d2299a2b-86de-44c8-ad00-430c4db89f4a)
+
+We select the console C# project template
+
+![image](https://github.com/luiscoco/Azure-Event-Hubs-for-Apache-Kafka-Ecosystems/assets/32194879/9e8636cc-c52b-488e-9c8d-6cf3db1709ab)
+
+We input the project name and location
+
+![image](https://github.com/luiscoco/Azure-Event-Hubs-for-Apache-Kafka-Ecosystems/assets/32194879/fbd97ca2-5d0a-49e0-bc11-ba8553024205)
 
 ## 3. Load the project dependencies/libraries
 
