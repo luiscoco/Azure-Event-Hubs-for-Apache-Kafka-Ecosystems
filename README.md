@@ -6,7 +6,35 @@ https://github.com/Azure/azure-event-hubs-for-kafka/tree/master/quickstart/dotne
 
 https://github.com/Azure/azure-event-hubs-for-kafka/tree/master
 
-## 1. Create an EventHub in Azure Portal
+## 1. Create an EventHub with Azure CLI commands
+
+We create an Azure Event Hubs namespace named "mykafkaeventhub" in your resource group "myRG", located in "West Europe", with the pricing tier "Standard", and then to create a new Event Hub named "eventhubtest" inside this namespace, you can follow these steps using Azure CLI commands. 
+
+Ensure we have Azure CLI installed and we are logged in to your Azure account through the CLI.
+
+### 1.1. Create an Event Hubs Namespace
+
+We use the az eventhubs namespace create command to create a new Event Hubs namespace
+
+```
+az eventhubs namespace create --name mykafkaeventhub --resource-group myRG --location westeurope --sku Standard
+```
+
+This command creates a namespace named "mykafkaeventhub" in the "myRG" resource group, located in "West Europe", with a "Standard" pricing tier
+
+### 1.2. Create an Event Hub
+
+After the namespace is created, we can create an Event Hub named "eventhubtest" within this namespace using the az eventhubs eventhub create command
+
+```
+az eventhubs eventhub create --name eventhubtest --namespace-name mykafkaeventhub --resource-group myRG
+```
+
+This command creates an Event Hub named "eventhubtest" in the previously created namespace "mykafkaeventhub".
+
+We make sure we have the necessary permissions to create resources in the specified resource group and region
+
+If you encounter any errors, double-check the command syntax and ensure your Azure CLI is logged in to your Azure account.
 
 ## 2. Create a .NET8 console application
 
