@@ -61,7 +61,12 @@ Here's how we can retrieve the connection string and FQDN for our Event Hubs nam
 **Get Namespace Connection String**:
 
 ```
-az eventhubs namespace authorization-rule keys list --resource-group myRG --namespace-name mykafkaeventhub --name RootManageSharedAccessKey --query primaryConnectionString -o tsv
+az eventhubs namespace authorization-rule keys list ^
+    --resource-group myRG ^
+    --namespace-name mykafkaeventhub ^
+    --name RootManageSharedAccessKey ^
+    --query primaryConnectionString ^
+    -o tsv
 ```
 
 This command will output the primary connection string for the namespace, which includes the Shared Access Signature (SAS) key.
