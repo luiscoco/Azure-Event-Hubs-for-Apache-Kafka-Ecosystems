@@ -69,7 +69,9 @@ az eventhubs namespace authorization-rule keys list ^
     -o tsv
 ```
 
-This command will output the primary connection string for the namespace, which includes the Shared Access Signature (SAS) key.
+This command will output the primary connection string for the namespace, which includes the Shared Access Signature (SAS) key
+
+![image](https://github.com/luiscoco/Azure-Event-Hubs-for-Apache-Kafka-Ecosystems/assets/32194879/eaeef73b-92ea-4000-80cf-fb5c5e182ee2)
 
 **Get Namespace FQDN**:
 
@@ -84,6 +86,8 @@ So, we can identify the FQDN from the Endpoint part of the connection string. Ho
 ```
 az eventhubs namespace show --name mykafkaeventhub --resource-group myRG --query serviceBusEndpoint -o tsv
 ```
+
+![image](https://github.com/luiscoco/Azure-Event-Hubs-for-Apache-Kafka-Ecosystems/assets/32194879/22b3e46f-c58b-4c6f-bd89-847a28981b33)
 
 This command will give you the serviceBusEndpoint value, which includes the FQDN of your Event Hubs namespace
 
