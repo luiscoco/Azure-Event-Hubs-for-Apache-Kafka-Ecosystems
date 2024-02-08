@@ -138,6 +138,9 @@ Copy the **cacert.pem** file to the project root
 
 ## 8. Run and test the application
 
+We verify the application output
+
+![image](https://github.com/luiscoco/Azure-Event-Hubs-for-Apache-Kafka-Ecosystems/assets/32194879/408dbf2b-96de-402e-ac20-7ee9c9d3237d)
 
 
 
