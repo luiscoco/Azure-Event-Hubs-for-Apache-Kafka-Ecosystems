@@ -12,6 +12,12 @@ We create an Azure Event Hubs namespace named "mykafkaeventhub" in your resource
 
 Ensure we have Azure CLI installed and we are logged in to your Azure account through the CLI.
 
+Before starting with Azure CLI we run the log in command
+
+```
+az login
+```
+
 ### 1.1. Create an Event Hubs Namespace
 
 We use the az eventhubs namespace create command to create a new Event Hubs namespace
