@@ -48,6 +48,42 @@ If you encounter any errors, double-check the command syntax and ensure your Azu
 
 ![image](https://github.com/luiscoco/Azure-Event-Hubs-for-Apache-Kafka-Ecosystems/assets/32194879/39f5b713-dd4f-4c2f-8215-e64488b67d25)
 
+### 1.3. We get the EventHubNameSpace connection string and FQDN
+
+We obtain the **connection string** and the **Fully Qualified Domain Name (FQDN)** for an Azure Event Hubs namespace, we can use the az eventhubs namespace authorization-rule keys list command
+
+This command retrieves the keys and connection strings for a specific authorization rule within the namespace
+
+By default, every Event Hubs namespace has a built-in rule named **RootManageSharedAccessKey** that has manage, send, and listen claims.
+
+Here's how we can retrieve the connection string and FQDN for our Event Hubs namespace "mykafkaeventhub" in the resource group "myRG":
+
+**Get Namespace Connection String**:
+
+´´´
+az eventhubs namespace authorization-rule keys list --resource-group myRG --namespace-name mykafkaeventhub --name RootManageSharedAccessKey --query primaryConnectionString -o tsv
+´´´
+
+This command will output the primary connection string for the namespace, which includes the Shared Access Signature (SAS) key.
+
+**Get Namespace FQDN**:
+
+While the Azure CLI doesn't directly provide a command that only outputs the FQDN, the FQDN is part of the connection string. The connection string format is typically:
+
+```
+Endpoint=sb://<FQDN>/;SharedAccessKeyName=<KeyName>;SharedAccessKey=<KeyValue>
+```
+
+So, we can identify the FQDN from the Endpoint part of the connection string. However, if we want to specifically retrieve details about the namespace, including its FQDN, you can use the az eventhubs namespace show command and then parse the output for the serviceBusEndpoint or directly inspect the JSON output:
+
+```
+az eventhubs namespace show --name mykafkaeventhub --resource-group myRG --query serviceBusEndpoint -o tsv
+```
+
+This command will give you the serviceBusEndpoint value, which includes the FQDN of your Event Hubs namespace
+
+Remember, the actual host part of the serviceBusEndpoint URL is the FQDN you're interested in
+
 ## 2. Create a .NET8 console application
 
 ## 3. Load the project dependencies/libraries
