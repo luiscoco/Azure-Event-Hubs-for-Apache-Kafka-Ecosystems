@@ -100,6 +100,20 @@ Remember, the actual host part of the serviceBusEndpoint URL is the FQDN you're 
 
 ## 4. Configure the App.config file
 
+![image](https://github.com/luiscoco/Azure-Event-Hubs-for-Apache-Kafka-Ecosystems/assets/32194879/c04ebcd6-b6b1-420a-b57f-9725ee481ca2)
+
+```
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <appSettings>
+    <add key="EH_FQDN" value="mykafkaeventhub.servicebus.windows.net:9093"/>
+    <add key="EH_CONNECTION_STRING" value="Endpoint=sb://mykafkaeventhub.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=F0W/prbI9uVCExHveAgQADfegnIZ7Ahwe+AEhLmbI14="/>
+    <add key="EH_NAME" value="eventhubtest"/>
+    <add key="CONSUMER_GROUP" value="$Default"/>
+    <add key="CA_CERT_LOCATION" value=".\cacert.pem"/>
+  </appSettings>
+</configuration>
+```
 
 ## 5. Create the certificate (cacert.pem)
 
