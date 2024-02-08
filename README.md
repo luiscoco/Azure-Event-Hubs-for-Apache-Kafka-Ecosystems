@@ -46,6 +46,8 @@ We make sure we have the necessary permissions to create resources in the specif
 
 If you encounter any errors, double-check the command syntax and ensure your Azure CLI is logged in to your Azure account.
 
+![image](https://github.com/luiscoco/Azure-Event-Hubs-for-Apache-Kafka-Ecosystems/assets/32194879/39f5b713-dd4f-4c2f-8215-e64488b67d25)
+
 ## 2. Create a .NET8 console application
 
 ## 3. Load the project dependencies/libraries
