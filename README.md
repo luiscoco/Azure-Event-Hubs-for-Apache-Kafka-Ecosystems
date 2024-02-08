@@ -4,6 +4,8 @@ For additional info about this sample see these github repos:
 
 https://github.com/Azure/azure-event-hubs-for-kafka/tree/master/quickstart/dotnet
 
+https://github.com/Azure/azure-event-hubs-for-kafka/tree/master/quickstart
+
 https://github.com/Azure/azure-event-hubs-for-kafka/tree/master
 
 ## 1. Create an EventHub with Azure CLI commands
